@@ -1,0 +1,68 @@
+mat-toolbar {
+    background-color: lightgray;
+    /* background-color: transparent; */
+    height: 100px;
+    width: 100%;
+    
+}
+
+::ng-deep .mat-toolbar{
+    z-index: 1000;
+    position: fixed;
+  }
+
+
+
+/* .logo {
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.logo > img {
+    margin-left: 1px;
+    width: 80%;
+} */
+
+.logo {
+    display: table;
+    color: black;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.logo > p {
+    text-align: center; 
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.text {
+    display: table;
+    color: black;
+    font-size: x-large;
+}
+
+.text > p {
+    font-family: cursive;
+    text-align:center; 
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.logo > img {
+    width: 80px;
+    height: 80px;
+}
+
+.spacer {
+    flex: 1 1 auto;
+  }
+
+button {
+    background-color:lightgray;
+    color: black;
+    margin-right: 10px;
+}

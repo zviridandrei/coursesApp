@@ -1,0 +1,86 @@
+body {
+    padding: 10px;
+    margin: auto;
+    height: auto;
+    width: auto;
+    background-color: #FFFFCC;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1026px) {
+    body {
+        height: auto;
+        width: auto;
+        background-color: #FFFFCC;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h3, h2, p {
+        font-size: x-small;
+    }
+    
+    .images {
+        width: 50%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.left {
+    /* width: 20%; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    /* width: 20%; */
+    height: auto;
+    margin: auto;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    /* width: 30%; */
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.center > h2, h3, p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.center > h2 {
+    font-weight: bold;
+}

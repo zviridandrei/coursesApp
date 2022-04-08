@@ -1,0 +1,48 @@
+<mat-toolbar [ngStyle]="{'background-color':isScrolled ? 'transparent' : 'lightgray' }">
+  <div class="logo">
+      <!-- <img
+        src="../../../assets/logo.svg"
+        alt="logo"
+        routerLink="/home"
+      /> -->
+      <p>NLP</p>
+  </div>
+
+  <span class="spacer"></span>
+
+  <div class="text">
+    <p>Gabriela Alina Zvirid</p>
+  </div>
+
+  <span class="spacer"></span>
+
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    aria-label="Example icon-button with a menu"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/">
+      <!-- <mat-icon>home</mat-icon> -->
+      <span>Home</span>
+    </button>
+    <button mat-menu-item routerLink="/services">
+      <!-- <mat-icon>dialpad</mat-icon> -->
+      <span>Services</span>
+    </button>
+    <button mat-menu-item routerLink="/products">
+      <!-- <mat-icon>dialpad</mat-icon> -->
+      <span>Products</span>
+    </button>
+    <button mat-menu-item>
+      <!-- <mat-icon>dialpad</mat-icon> -->
+      <span>Sign in</span>
+    </button>
+    <button mat-menu-item>
+      <!-- <mat-icon>dialpad</mat-icon> -->
+      <span>Login</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>
